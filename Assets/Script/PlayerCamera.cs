@@ -5,6 +5,7 @@ public class PlayerCamera : NetworkBehaviour
 {
     public override void OnStartLocalPlayer()
     {
+        // aaaa
         Camera.main.cullingMask &= ~(1 << LayerMask.NameToLayer("LocalPlayerCards"));
     }
 
